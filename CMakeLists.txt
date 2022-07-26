@@ -5,7 +5,7 @@ project(libogg)
 include(GNUInstallDirs)
 include(CheckIncludeFiles)
 include(CMakePackageConfigHelpers)
-include(CTest)
+#include(CTest) # COMMENTED OUT FOR HARMONY BUILDS
 
 # Build options
 option(BUILD_SHARED_LIBS "Build shared library" OFF)
@@ -14,7 +14,7 @@ if(APPLE)
 endif()
 
 # Install options
-option(INSTALL_DOCS "Install documentation" ON)
+option(INSTALL_DOCS "Install documentation" OFF)
 option(INSTALL_PKG_CONFIG_MODULE "Install ogg.pc file" ON)
 option(INSTALL_CMAKE_PACKAGE_MODULE "Install CMake package configiguration module" ON)
 
